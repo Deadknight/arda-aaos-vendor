@@ -1,0 +1,27 @@
+java_library {
+    name: "arda-vehicle-router-proto-java",
+    srcs: [
+        "arda_vehicle_router.proto",
+    ],
+    proto: {
+        type: "lite",
+    },
+    static_libs: [
+        "libprotobuf-java-lite",
+    ],
+    platform_apis: true,
+}
+
+cc_library_static {
+    name: "arda-vehicle-router-proto-cpp",
+    srcs: [
+        "arda_vehicle_router.proto",
+    ],
+    proto: {
+        type: "lite",
+        export_proto_headers: true,
+    },
+    static_libs: [
+        "libprotobuf-cpp-lite",
+    ],
+}

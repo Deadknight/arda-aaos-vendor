@@ -1,0 +1,8 @@
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.automotive.vehicle</name>
+        <version>4</version>
+        <fqname>IVehicle/default</fqname>
+        <fqname>IVehicle/arda_base</fqname>
+    </hal>
+</manifest>

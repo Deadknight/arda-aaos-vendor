@@ -1,0 +1,14 @@
+aidl_interface {
+    name: "arda.vehicle.adapter",
+    srcs: [
+        "com/arda/vehicle/adapter/*.aidl",
+        "com/arda/vehicle/admin/*.aidl",
+    ],
+    unstable: true,
+    backend: {
+        java: {
+            enabled: true,
+            platform_apis: true,
+        },
+    },
+}

@@ -1,0 +1,11 @@
+subdirs = [
+    "aidl",
+    "router-proto",
+    "router-service",
+    "sdk",
+    "manager",
+    "permissions",
+    "smoke-adapter",
+    "vhal-base",
+    "vhal-proxy",
+]

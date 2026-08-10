@@ -1,0 +1,28 @@
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+android_app {
+    name: "ArdaInputBridge",
+    srcs: ["src/**/*.java"],
+    manifest: "AndroidManifest.xml",
+    certificate: "platform",
+    privileged: true,
+    system_ext_specific: true,
+    platform_apis: true,
+    optimize: {
+        enabled: false,
+    },
+}
+
+cc_binary {
+    name: "arda-input-bridge-probe",
+    srcs: ["probe/arda_input_bridge_probe.cpp"],
+    system_ext_specific: true,
+    compile_multilib: "64",
+    stl: "none",
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}
